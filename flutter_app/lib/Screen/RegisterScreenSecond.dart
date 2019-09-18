@@ -16,7 +16,7 @@ import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 
 
-class RegisterScreen extends StatelessWidget {
+class RegisterScreenSecond extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -74,25 +74,24 @@ class RegisterScreen extends StatelessWidget {
                   name_bar,
                   number_bar,
                   email_bar,
-                  location_bar,
-                  id_bar,
 
-                  button_green("التالي", 250,45),
+
+                  button_green("تسجيل", 250,45),
 
                   new Container(
                       margin: EdgeInsets.only(
-                        top: 20
+                          top: 20
                       ),
                       child: Image(
-                    image: new AssetImage("assets/images/color.png"),
-                    width: 20,
-                    height: 20,
-                    color: null,
-                    fit: BoxFit.scaleDown,
-                    alignment: Alignment.center,
-                  ))
+                        image: new AssetImage("assets/images/color2.png"),
+                        width: 20,
+                        height: 20,
+                        color: null,
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.center,
+                      ))
 
-                  ],
+                ],
 
               )
 
@@ -129,11 +128,11 @@ class RegisterScreen extends StatelessWidget {
               ),
               filled: true,
               icon:  Icon(
-                Icons.person,
+                Icons.vpn_key,
                 color: Color(0xFF9F323E),
               ),
-              hintText: 'Your Name',
-              labelText: 'Name',
+              hintText: 'Your Password',
+              labelText: 'Password',
 
             ),
             keyboardType: TextInputType.emailAddress,
@@ -170,11 +169,11 @@ class RegisterScreen extends StatelessWidget {
               ),
               filled: true,
               icon:  Icon(
-                Icons.call,
+                Icons.vpn_key,
                 color: Color(0xFF9F323E),
               ),
-              hintText: 'Your Phone Number',
-              labelText: 'Phone Number',
+              hintText: 'Confirm Password',
+              labelText: 'Confirm Password',
 
             ),
             keyboardType: TextInputType.emailAddress,
@@ -211,11 +210,11 @@ class RegisterScreen extends StatelessWidget {
               ),
               filled: true,
               icon:  Icon(
-                Icons.alternate_email,
+                Icons.calendar_today,
                 color: Color(0xFF9F323E),
               ),
-              hintText: 'Your Email',
-              labelText: 'Email',
+              hintText: 'Your Birthday',
+              labelText: 'Birthday',
 
             ),
             keyboardType: TextInputType.emailAddress,
