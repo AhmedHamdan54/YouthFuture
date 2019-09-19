@@ -1,9 +1,14 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/Constant/Constant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/Screen/Feed.dart';
 import 'package:flutter_app/Screen/buttonCircular.dart';
 import 'package:flutter_app/Screen/button_large.dart';
+import 'package:flutter_app/Screen/cuppertino_tap_bar.dart';
 import 'package:flutter_app/Screen/floatting_action_button.dart';
+import 'package:flutter_app/Screen/sing_in.dart';
+import 'package:flutter_app/Screen/sing_in.dart' as prefix0;
 import 'package:flutter_app/buttons/ListOfButton.dart';
 import 'package:flutter_app/buttons/button_green.dart';
 import 'package:flutter_app/buttons/button_photo.dart';
@@ -36,7 +41,7 @@ class RegisterScreenSecond extends StatelessWidget {
 
               GradientBack("",165),
 
-              CirclButton(width,height,AssetUrl),
+              CirclButton(width,height,AssetUrl, Alignment.topCenter),
 
               Column(
                 mainAxisAlignment: MainAxisAlignment.center ,
@@ -64,7 +69,18 @@ class RegisterScreenSecond extends StatelessWidget {
                       SignInButtonBuilder(
                         text: 'Sign in with Google',
                         icon: FontAwesomeIcons.google,
-                        onPressed: () {},
+                        onPressed: () {
+                          signOutGoogle();
+                          signInWithGoogle().whenComplete(() {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return cupertino_tap_bar();
+                                },
+                              ),
+                            );
+                          });
+                        },
                         backgroundColor: Color(0xFF1976D2),
 
                       )

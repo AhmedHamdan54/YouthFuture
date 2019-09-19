@@ -36,7 +36,7 @@ class RegisterScreen extends StatelessWidget {
 
               GradientBack("",165),
 
-              CirclButton(width,height,AssetUrl),
+              CirclButton(width,height,AssetUrl,Alignment.topCenter),
 
               Column(
                 mainAxisAlignment: MainAxisAlignment.center ,

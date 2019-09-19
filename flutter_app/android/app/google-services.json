@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "849055512077",
+    "firebase_url": "https://saveyouth-eed17.firebaseio.com",
+    "project_id": "saveyouth-eed17",
+    "storage_bucket": "saveyouth-eed17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849055512077:android:ba14119f1f6ee958edc744",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849055512077-v74faqgbea9o5e55o1ck0j3r4rp58gih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_app",
+            "certificate_hash": "249ec38b6964375601a13760eb15348b4955375a"
+          }
+        },
+        {
+          "client_id": "849055512077-fspa3dicvat5logqlbjpk8bvt6ru786i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGjNxJEOyBTCBU3B6vd_0rVbVFdXZeAyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849055512077-fspa3dicvat5logqlbjpk8bvt6ru786i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
