@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/Screen/Messages.dart';
 import 'package:flutter_app/Screen/Notifications.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'Feed.dart';
 class  cupertino_tap_bar extends StatelessWidget {
@@ -16,15 +17,15 @@ class  cupertino_tap_bar extends StatelessWidget {
             items: [
               BottomNavigationBarItem(
                   icon: Icon(Icons.home, color: Color(0xFFAD505A)),
-                  title: Text("Home")
+                  title: Text("الرئيسية")
               ),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.search, color: Color(0xFFAD505A)),
-                  title: Text("Search")
+                  icon: Icon(Icons.notifications_active, color: Color(0xFFAD505A)),
+                  title: Text("الاشعارات")
               ),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.person, color: Color(0xFFAD505A)   ),
-                  title: Text("Profile")
+                  icon: Icon(FontAwesomeIcons.rocketchat, color: Color(0xFFAD505A)   ),
+                  title: Text("الرسائل")
               ),
             ]
         ),
@@ -38,12 +39,12 @@ class  cupertino_tap_bar extends StatelessWidget {
     break;
     case 1:
     return CupertinoTabView(
-    builder: (BuildContext context) => Messages(),
+    builder: (BuildContext context) => NotificationsC(),
     );
     break;
     case 2:
     return CupertinoTabView(
-    builder: (BuildContext context) => NotificationsC(),);
+    builder: (BuildContext context) => Messages(),);
     break;
 
     } }));

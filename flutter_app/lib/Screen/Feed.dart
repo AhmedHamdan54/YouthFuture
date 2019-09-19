@@ -12,53 +12,61 @@ class Feed extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: Stack(
+    body: Stack(
 
-        children: <Widget>[
-
-          GradientBack("",120),
-
-Align(
-alignment:  Alignment(1,1),
-
-      child: Container(
-  margin: EdgeInsets.only(
-  ),
-  child: Row(
     children: <Widget>[
-      Container(
-          margin: EdgeInsets.only(
-            left: 150,
-            bottom: 590
-          ),
-          child:
-          Center(
-              child:
-              Text("الصفحة الرئيسية",textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white,
-                    fontSize: 20
-                ),
-              )
-          )
-      )
+    Container(
+    margin: EdgeInsets.only(
+    top: 80
+
+    ),
+    decoration: BoxDecoration(
+    image: DecorationImage(
+    image: AssetImage("assets/images/HomeNew.png"),
+    fit: BoxFit.scaleDown,
+    ),
+    )),
+    GradientBack("",120),
+
+
+    Align(
+    alignment:  Alignment(1,1),
+
+    child: Container(
+    margin: EdgeInsets.only(
+    ),
+    child: Row(
+    children: <Widget>[
+    Container(
+    margin: EdgeInsets.only(
+    left: 140,
+
+    bottom: 580
+    ),
+    child:
+    Center(
+    child:
+    Text("الصفحة الرئيسية",textAlign: TextAlign.center,
+    style: TextStyle(
+    color: Colors.white,
+    fontSize: 20
+    ),
+    )
+    )
+    )
     ],
-  )
-  ,
-),)
-,      ProfileButton(60,60, "assets/images/logoo.png",Alignment.topRight),
-          Align(
-              alignment: Alignment.topLeft,
-              child:
-
-          Icon(
-            Icons.calendar_today,
-
-          ))
+    )
+    ,
+    ),)
+    ,      Container( margin:EdgeInsets.only(
+    right: 20,
+    top: 5
+    ),child: ProfileButton(60,60, "assets/images/logoo.png",Alignment.topRight)),
 
 
-        ],
-      )
+
+    ],
+    )
 
     );
   }}
